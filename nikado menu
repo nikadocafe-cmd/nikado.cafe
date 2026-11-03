@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#123c32">
+<meta name="description" content="منوی کافه نیکادو">
+<title>منوی کافه نیکادو | Nikado Café</title>
+<style>
+:root {
+  --green: #123c32;
+  --green-soft: #e7eee6;
+  --cream: #fff8ec;
+  --card: #fffdf8;
+  --orange: #f5a623;
+  --ink: #172c28;
+  --muted: #68746e;
+  --border: #eadfce;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+:focus-visible {
+  outline: 3px solid var(--orange);
+  outline-offset: 3px;
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: Tahoma, Arial, sans-serif;
+  line-height: 1.9;
+}
+header {
+  padding: 38px 18px 32px;
+  text-align: center;
+  color: #fff;
+  background: radial-gradient(circle at 85% 10%, #2c6654, transparent 35%), var(--green);
+  border-radius: 0 0 28px 28px;
+}
+.logo {
+  color: #fff;
+  font: italic clamp(42px, 10vw, 68px)/1.1 Georgia, serif;
+}
+.cafe {
+  margin: 8px 0 12px;
+  color: var(--orange);
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: .35em;
+}
+.tag { margin: 0; color: #e8eee9; }
+main {
+  width: min(100% - 28px, 1000px);
+  margin: 24px auto 36px;
+}
+.intro {
+  margin: 18px auto 26px;
+  color: var(--muted);
+  text-align: center;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 18px 0 28px;
+}
+nav a {
+  padding: 7px 13px;
+  color: var(--green);
+  background: var(--green-soft);
+  border: 1px solid #d2dfd3;
+  border-radius: 99px;
+  text-decoration: none;
+  font-size: 13px;
+  transition: background .2s, transform .2s;
+}
+nav a:hover { background: #d9e6d9; transform: translateY(-1px); }
+section {
+  margin: 18px 0;
+  padding: 20px;
+  scroll-margin-top: 16px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: 0 6px 20px #193b2910;
+}
+h2 {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 0 0 14px;
+  color: var(--green);
+  font-size: 21px;
+}
+h2::before {
+  display: inline-block;
+  width: 7px;
+  height: 25px;
+  content: "";
+  background: var(--orange);
+  border-radius: 6px;
+}
+.items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+  gap: 12px;
+}
+.items article {
+  min-width: 0;
+  padding: 13px 15px;
+  background: #f8f3e9;
+  border: 1px solid #f0e7d8;
+  border-radius: 12px;
+}
+h3 {
+  margin: 0;
+  color: #173e34;
+  font-size: 15px;
+  line-height: 1.9;
+}
+p { margin: 0; color: #5c6862; font-size: 13px; }
+footer {
+  padding: 25px 15px;
+  color: #fff;
+  text-align: center;
+  background: var(--green);
+  border-radius: 24px 24px 0 0;
+}
+footer strong {
+  color: var(--orange);
+  font: italic 28px Georgia, serif;
+}
+footer a { color: #fff; }
+footer a:focus-visible,
+nav a:focus-visible {
+  outline-color: var(--orange);
+}
+@media (min-width: 700px) {
+  section { padding: 22px 25px; }
+  .intro { font-size: 16px; }
+}
+@media (max-width: 480px) {
+  main { width: min(100% - 20px, 1000px); }
+  section { padding: 15px 13px; }
+  h2 { font-size: 19px; }
+  .items { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<header><h1 class="logo">Nikado</h1><div class="cafe">C A F E</div><p class="tag">Good Food • Good Mood</p><p class="tag">بیشتر از یک قهوه ☕</p></header>
+<main>
+<div class="intro">یه گوشه دنج، یه طعم خوشمزه، یه حال خوب… 🤎</div>
+<nav aria-label="دسته‌بندی‌های منو">
+<a href="#breakfast">صبحانه</a><a href="#hot">نوشیدنی گرم</a><a href="#coffee">قهوه</a><a href="#iced">آیس کافه</a><a href="#matcha">ماچا</a><a href="#drinks">نوشیدنی</a><a href="#shakes">شیک</a><a href="#smoothies">اسموتی</a><a href="#dessert">دسر</a>
+</nav>
+<section id="breakfast"><h2>صبحانه</h2><div class="items">
+<article><h3>نیمرو</h3></article><article><h3>املت</h3></article><article><h3>سوسیس تخم‌مرغ</h3></article><article><h3>پنینی مرغ و قارچ</h3></article><article><h3>کروسان ژامبون و پنیر</h3></article><article><h3>کروسان موز نوتلا</h3></article><article><h3>اسنک ژامبون و پنیر</h3></article></div></section>
+<section id="hot"><h2>نوشیدنی گرم</h2><div class="items"><article><h3>چای</h3></article><article><h3>دمنوش</h3></article><article><h3>هات چاکلت</h3></article><article><h3>شیر پسته زعفران</h3></article></div></section>
+<section id="coffee"><h2>قهوه</h2><div class="items">
+<article><h3>اسپرسو فول کافئین</h3></article>
+<article><h3>اسپرسو عربیکا</h3></article>
+<article><h3>اسپرسو 50/50</h3></article>
+<article><h3>اسپرسو عربیکا 70/30</h3></article>
+<article><h3>آمریکانو</h3></article>
+<article><h3>کاپوچینو</h3></article>
+<article><h3>لاته</h3></article>
+<article><h3>موکا</h3></article>
+<article><h3>قهوه ترک</h3></article></div></section>
+<section id="iced"><h2>آیس کافه</h2><div class="items">
+<article><h3>آیس آمریکانو</h3></article><article><h3>آیس لاته</h3></article><article><h3>آیس موکا</h3></article><article><h3>آفاگاتو</h3></article>
+</div></section>
+<section id="matcha"><h2>ماچا</h2><div class="items"><article><h3>ماچا لاته</h3></article><article><h3>آیس ماچا لاته</h3></article></div></section>
+<section id="drinks"><h2>نوشیدنی</h2><div class="items">
+<article><h3>لیموناد</h3></article>
+<article><h3>موهیتو</h3></article>
+
+<article><h3>موهیتو توت‌فرنگی</h3></article>
+<article><h3>موکتل بستنی یخی میوه‌ای</h3></article>
+</div></section>
+<section id="shakes"><h2>شیک</h2><div class="items">
+<article><h3>شیک اسپرسو</h3></article>
+<article><h3>شیک نوتلا</h3></article>
+<article><h3>شیک توت‌فرنگی</h3></article>
+
+</div></section>
+<section id="smoothies"><h2>اسموتی</h2><div class="items">
+<article><h3>اسموتی توت‌فرنگی</h3></article>
+<article><h3>اسموتی هندوانه</h3></article>
+
+<article><h3>اسموتی موز شکلات</h3></article>
+</div></section>
+<section id="dessert"><h2>دسر</h2><div class="items">
+
+<article><h3>کروسان</h3></article>
+<article><h3>کیک روز</h3></article>
+<article><h3>تارت</h3></article>
+<article><h3>کوکی</h3></article>
+</div></section>
+</main>
+<footer><strong>Nikado Café</strong><div>لحظه‌های خوب با نیکادو ♡</div><a href="https://www.instagram.com/nikado.cafe/" target="_blank" rel="noopener noreferrer" aria-label="Instagram nikado.cafe" style="display:inline-flex;align-items:center;justify-content:center;gap:9px;margin-top:16px;color:#fff;text-decoration:none;font-family:Arial,sans-serif;font-size:16px;font-weight:600;direction:ltr"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg><span>nikado.cafe</span></a></footer>
+</body></html>
